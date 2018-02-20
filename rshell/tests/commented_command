@@ -1,0 +1,17 @@
+echo hello
+ls -a || echo hello world
+ps
+echo test
+mkdir
+mkdir test_directory
+rm -r test_directory
+echo test && echo test2
+history || ps # ls -a
+ls -R
+echo
+touch file.cpp 
+rm file.cpp 
+cat file.cpp
+echo mkdir test_dir
+history -q
+exit
