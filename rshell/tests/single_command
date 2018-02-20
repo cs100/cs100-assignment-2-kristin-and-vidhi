@@ -1,0 +1,15 @@
+echo hello world
+ls
+ps
+mkdir test_directory
+ls
+rm -r test_directory
+echo This is a test
+ls -s
+echo
+touch testfile.cpp
+ls
+rm testfile.cpp
+ps
+echo tests are all done
+exit
