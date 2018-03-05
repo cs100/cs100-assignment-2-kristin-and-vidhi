@@ -17,6 +17,24 @@ $ make
 $ bin/rshell
 ```
 
+## Tasks Distribution For Assignment 3
+
+Kristin Hsu:
+    Task 1: Github Setup (10%)
+    Task 2: "Test" command 1 (for the case "test -e test/file/path", 20%);
+    Task 3: "Test" command 2 (for the case "[ -e test/file/path ]", 15%);
+    
+    Total: 45%
+    
+Vidhi Jain:
+    Task 4: The Precedence Operators (30%)
+    Task 5: construct test scripts (enough test cases, 15%)
+    Task 6: construct json and README files, and git commit (that means, 
+            all the works meaned from the part "Submission" to "Coding 
+            Conventions" in assignment 3 description)(10%)
+    
+    Total: 55%
+    
 
 ## Bugs
 
