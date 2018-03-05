@@ -3,16 +3,14 @@
 
 #include "Connector.h"
 
-Connector::Connector(Base* lhs, Base* rhs){
-    this -> rhs = rhs;
-    this -> lhs = lhs;
-    
+Connector::Connector(Base* lhs, Base* rhs) {
+    this->lhs = lhs;
+    this->rhs = rhs;
 }
 
-Connector::Connector(){
-    this -> rhs = NULL;
-    this -> lhs = NULL;
-    
-}
+Connector::Connector()  {
+    this->lhs = NULL;
+    this->lhs = NULL;
 
+}
 #endif
