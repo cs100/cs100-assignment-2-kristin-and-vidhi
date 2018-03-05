@@ -3,20 +3,11 @@
 
 #include "Connector.h"
 
-
-//kinda the same as the otherss
-class AND:public Connector{
+class AND: public Connector {
     public:
     AND(Base* lhs, Base* rhs);
     AND();
-    
-    
-    
     virtual bool execute();
-    
-    
-    
-    
 };
 
 #endif
