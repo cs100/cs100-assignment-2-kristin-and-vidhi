@@ -36,9 +36,7 @@ Vidhi Jain:
     
     Task 5: construct test scripts (enough test cases, 15%)
     
-    Task 6: construct json and README files, and git commit (that means, 
-            all the works meaned from the part "Submission" to "Coding 
-            Conventions" in assignment 3 description)(10%)
+    Task 6: construct json and README files, and git commit (that means, all the works meaned from the part "Submission" to "Coding Conventions" in assignment 3 description)(10%)
             
     
     Total: 55%
