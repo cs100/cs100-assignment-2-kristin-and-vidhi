@@ -7,7 +7,7 @@ class Semicolon: public Connector {
         Semicolon(Base* lhs, Base* rhs);
         Semicolon();
     
-        virtual bool execute();
+        virtual bool execute(int n, int out);
 };
 
 #endif

@@ -3,11 +3,11 @@
 
 #include "Connector.h"
 
-class OR: public Connector {
+class OR: public Connector{
     public:
-        OR(Base* lhs, Base* rhs);
-        OR();
-        virtual bool execute();
+    OR(Base* lhs, Base* rhs);
+    OR();
+    virtual bool execute(int n, int out);
 };
 
 #endif
