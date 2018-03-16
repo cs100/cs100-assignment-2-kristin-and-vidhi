@@ -19,7 +19,7 @@ $ bin/rshell
 
 ## Tasks Distribution For Assignment 3
 
-Kristin Hsu:
+Vidhi Jain:
 
     
     Task 2: Input redirection (For commands contain "<", 20%);
@@ -33,7 +33,7 @@ Kristin Hsu:
     
     Total: 50%
     
-Vidhi Jain:
+Kristin Hsu:
 
     
     Task 3: "Test" command 2 (for the case "[ -e test/file/path ]", 15%);
