@@ -8,7 +8,7 @@ class SingleOutRed: public Connector{
     public:
     SingleOutRed(Base* lhs, Base* rhs);
     SingleOutRed();
-    virtual bool execute(int n, int out);
+    virtual bool execute(int in, int out);
     
 };
 

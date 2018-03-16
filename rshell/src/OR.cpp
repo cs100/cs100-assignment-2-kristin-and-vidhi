@@ -7,9 +7,9 @@
 OR::OR(Base* lhs, Base* rhs): Connector(lhs,rhs) {}
 OR::OR(): Connector() {}
 
-bool OR::execute(int n, int out) {
-    if (!lhs->execute(n,out)) {
-        if (rhs->execute(n, out)) {
+bool OR::execute(int in, int out) {
+    if (!lhs->execute(in,out)) {
+        if (rhs->execute(in, out)) {
             return true;
         }
         

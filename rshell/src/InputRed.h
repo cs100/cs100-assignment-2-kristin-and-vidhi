@@ -8,7 +8,7 @@ class InputRed: public Connector{
     public:
         InputRed(Base* rhs, Base* lhs);
         InputRed();
-        virtual bool execute(int n, int out);
+        virtual bool execute(int in, int out);
 };
 
 #endif

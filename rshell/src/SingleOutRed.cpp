@@ -16,7 +16,7 @@ using namespace std;
 SingleOutRed::SingleOutRed(Base* lhs, Base* rhs): Connector(lhs, rhs){}
 SingleOutRed::SingleOutRed(): Connector(){}
 
-bool SingleOutRed::execute(int n, int out){
+bool SingleOutRed::execute(int in, int out){
     string outfs = rhs->get_data();
     out = open(outfs.c_str(),O_WRONLY| O_TRUNC | O_CREAT, S_IRUSR | S_IRGRP | S_IWGRP | S_IWUSR);
     

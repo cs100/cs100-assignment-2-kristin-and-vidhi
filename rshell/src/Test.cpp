@@ -39,7 +39,7 @@ string Test::get_data() {
     return command;
 }
 
-bool Test::execute (int n, int out) {
+bool Test::execute (int in, int out) {
     struct stat buf;
     string flag;
     string path;

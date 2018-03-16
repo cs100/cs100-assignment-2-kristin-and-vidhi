@@ -7,9 +7,9 @@
 Semicolon::Semicolon(Base* lhs, Base* rhs): Connector(lhs,rhs) {}
 Semicolon::Semicolon(): Connector() {}
 
-bool Semicolon::execute(int n, int out) {
-    lhs->execute(n, out);
-    if (rhs->execute(n, out)) {
+bool Semicolon::execute(int in, int out) {
+    lhs->execute(in, out);
+    if (rhs->execute(in, out)) {
         return true;
     }
     

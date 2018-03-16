@@ -8,7 +8,7 @@ class Pipe: public Connector{
     public:
     Pipe(Base* lhs, Base* rhs);
     Pipe();
-    virtual bool execute(int n, int out);
+    virtual bool execute(int in, int out);
     
 };
 #endif

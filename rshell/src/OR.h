@@ -7,7 +7,7 @@ class OR: public Connector{
     public:
     OR(Base* lhs, Base* rhs);
     OR();
-    virtual bool execute(int n, int out);
+    virtual bool execute(int in, int out);
 };
 
 #endif

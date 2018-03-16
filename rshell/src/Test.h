@@ -14,7 +14,7 @@ class Test: public Base {
         Test(queue<char*> flags);
         Test();
         void add_flag(char *a);
-        virtual bool execute(int n, int out);
+        virtual bool execute(int in, int out);
     
         //Debugging Func
         string get_data();
