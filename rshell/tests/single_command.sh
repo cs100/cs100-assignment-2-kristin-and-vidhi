@@ -1,5 +1,5 @@
 #!/bin/sh
-#tests single commands
+### single command test ###
 
 ../bin/rshell < single_command_test
 

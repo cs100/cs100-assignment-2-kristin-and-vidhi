@@ -1,4 +1,4 @@
 #!/bin/sh
-#tests exit and commands with exit
+### exit test ###
 
 ../bin/rshell < exit_test
