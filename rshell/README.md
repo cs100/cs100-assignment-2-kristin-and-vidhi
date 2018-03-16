@@ -17,6 +17,34 @@ $ make
 $ bin/rshell
 ```
 
+## Tasks Distribution For Assignment 3
+
+Kristin Hsu:
+
+    
+    Task 2: Input redirection (For commands contain "<", 20%);
+    
+    Task 3: output redirection (For commands contain ">" and ">>", 5%);
+    
+    Task 5: construct test scripts (enough test cases, 15%)
+    
+    Task 6: construct json and README files, and git commit (that means, all the works meaned from the part "Submission" to "Coding Conventions" in assignment 4 description)(10%);
+    
+    
+    Total: 50%
+    
+Vidhi Jain:
+
+    
+    Task 3: "Test" command 2 (for the case "[ -e test/file/path ]", 15%);
+    
+    Task 4: Piping (25%)
+    
+    Task 6: construct json and README files, and git commit (that means, all the works meaned from the part "Submission" to "Coding Conventions" in assignment 3 description)(10%)
+            
+    
+    Total: 50%
+    
 
 ## Bugs
 
@@ -28,3 +56,4 @@ child process. The child process was killed using the exit command.
 Also, the rshell does not support the cd command.
 The second bug occured when we were testing for a nonexistent file or directory. The system would
 output "stat: No such file or directory" instead of "(False)".
+
