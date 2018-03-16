@@ -3,24 +3,24 @@
 
 #include <queue>
 #include <string>
-using namespace std;
+
 #include "Base.h"
+
+using namespace std;
 
 class Cmd: public Base {
     protected:
-        char *command; 
-        queue<char*> flags;//holds flags prvided
-        public:
+        char *command;
+        queue<char*> flags;
+        
+    public:
         Cmd(char *command, queue<char*> flags);
         Cmd(queue<char*> flags);
         Cmd(char *command);
         Cmd();
-        
-        
-
         void add_flag(char *a);
-        virtual bool execute();
-        string getCommand();
-
+        virtual bool execute(int in, int out);
+        string get_data();
 };
+
 #endif

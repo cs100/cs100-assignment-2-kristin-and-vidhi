@@ -4,20 +4,26 @@
 #include "Connector.h"
 #include "AND.h"
 
-AND::AND (Base* lhs, Base* rhs): Connector (lhs,rhs){}
-AND::AND (): Connector (){}
+AND::AND(Base* lhs, Base* rhs): Connector(lhs, rhs) {
+    
+}
 
-bool AND::execute () {
-    if (lhs->execute ()){
-       if (rhs->execute ()){
-           return true;
-       }
-       else {
-           return false;
-       }
+AND::AND(): Connector() {
+    
+}
+
+bool AND::execute(int in, int out) {
+    if (lhs -> execute(in, out)) {
+        if (rhs -> execute(in, out)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
     else {
         return false;
-     }
+    }
 }
+
 #endif

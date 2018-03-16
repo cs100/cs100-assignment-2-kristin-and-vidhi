@@ -35,11 +35,11 @@ void Test::add_flag (char*a) {
     flags.push (a);
 }
 
-string Test::getCommand () {
+string Test::get_data() {
     return command;
 }
 
-bool Test::execute () {
+bool Test::execute (int in, int out) {
     struct stat buf;
     string flag;
     string path;
@@ -60,6 +60,11 @@ bool Test::execute () {
     
     if  (statret == 0) {
         exists = true;
+    }
+    
+    if (dup2(out,1) == -1) {
+        perror ("dup2");
+        return false;
     }
     
     if (statret == -1) {

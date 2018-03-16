@@ -37,40 +37,51 @@ void Cmd::add_flag(char*a) {
     flags.push(a);
 }
 
-string Cmd::getCommand() {
+string Cmd::get_data() {
     return command;
 }
 
-bool Cmd::execute() {
+bool Cmd::execute(int in, int out) {
+
     flags.push(NULL);
     int ctr = 1;
     char *args[500];
-    while (flags.size() != 0) {
+    while(flags.size() != 0) {
         args[ctr] = flags.front();
         flags.pop();
         ctr++;
     }
 
-    args[0] = command; 
+    args[0] = command;
     bool ret = true;
 
-    pid_t pid = fork();  
-    if (pid == -1) {                            
-        perror("fork");                         
+    pid_t pid = fork();
+    if(pid == -1) {
+        perror("fork");
     }
-    else if (pid == 0) {                        
-        if (execvp(args[0], args) == -1) {
+    else if (pid == 0) {
+
+        if(dup2(in,0) == -1) {
+            perror("dup2");
+            return false;
+        }
+        if(dup2(out,1) == -1) {
+            perror("dup2");
+            return false;
+        }
+
+        if(execvp(args[0], args) == -1) {
             ret = false;
             perror("execvp");
             exit(1);
         }
     }
-    else if (pid > 0) {                          
+    else if(pid > 0) {
        int status;
-       if (waitpid(pid,&status,0) == -1) {   
+       if(waitpid(pid,&status,0) == -1) {
            perror("wait");
        }
-       if (WEXITSTATUS(status) != 0) {
+       if(WEXITSTATUS(status) != 0) {
            ret = false;
        }
 
