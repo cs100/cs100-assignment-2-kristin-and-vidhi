@@ -5,9 +5,9 @@
 
 class AND: public Connector {
     public:
-    AND(Base* lhs, Base* rhs);
-    AND();
-    virtual bool execute();
+        AND(Base* lhs, Base* rhs);
+        AND();
+        virtual bool execute(int in, int out);
 };
 
 #endif
