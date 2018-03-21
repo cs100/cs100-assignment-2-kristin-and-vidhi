@@ -1,4 +1,6 @@
-Vidhi Jain and Kristin Hsu created this Rshell project for CS100 Winter 2018. 
+# Completed and archived in Winter 2018
+
+We created this Rshell project for CS100 Winter 2018. 
 Rshell is a command shell written in C++. 
 It is able to take in commands and connectors and execute them.
 Our design was based off the composite design pattern where the connector class and command class
@@ -19,7 +21,7 @@ $ bin/rshell
 
 ## Tasks Distribution For Assignment 3
 
-Kristin Hsu:
+KH:
 
     Task 1: Github Setup (10%)
     
@@ -30,7 +32,7 @@ Kristin Hsu:
     
     Total: 45%
     
-Vidhi Jain:
+VJ:
 
     Task 4: The Precedence Operators (30%)
     
